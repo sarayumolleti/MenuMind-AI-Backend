@@ -1,0 +1,49 @@
+# ===================================================================
+# MenuMind AI Backend - Git Ignore Configuration
+# ===================================================================
+
+# Environment & Sensitive Credentials (CRITICAL)
+.env
+.env.*
+*.env
+*.local
+!.env.example
+application-local.properties
+application-secret.properties
+
+# Build Artifacts
+target/
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE & Editor Specific
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.project
+.classpath
+.settings/
+.springBeans
+.sts4-cache
+.apt_generated
+.factorypath
+build/
+
+# OS & Logs
+.DS_Store
+Thumbs.db
+*.log
+logs/
+error.txt
+HELP.md
