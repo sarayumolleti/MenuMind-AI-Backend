@@ -1,0 +1,20 @@
+# Ignore local build outputs, environment secrets, and IDE files
+target/
+.env
+.env.*
+*.env
+*.local
+!.env.example
+.git
+.gitignore
+.dockerignore
+.idea
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+error.txt
+HELP.md
