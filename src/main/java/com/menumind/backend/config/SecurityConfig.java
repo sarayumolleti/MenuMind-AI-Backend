@@ -79,10 +79,11 @@ public class SecurityConfig {
                 .requestMatchers("/api/users/profile").authenticated()
                 .requestMatchers("/api/users/**").hasAnyAuthority("ROLE_ADMIN", "ROLE_MANAGER")
 
-                // Manager & Admin only: Menu modifications, Analytics, ML, Dashboard
+                // Manager & Admin only: Menu modifications, Analytics, ML, Dashboard, Reports
                 .requestMatchers("/api/categories/**").hasAnyAuthority("ROLE_MANAGER", "ROLE_ADMIN")
                 .requestMatchers("/api/menu-items/**").hasAnyAuthority("ROLE_MANAGER", "ROLE_ADMIN")
                 .requestMatchers("/api/analytics/**").hasAnyAuthority("ROLE_MANAGER", "ROLE_ADMIN")
+                .requestMatchers("/api/reports/**").hasAnyAuthority("ROLE_MANAGER", "ROLE_ADMIN")
                 .requestMatchers("/api/ml/**").hasAnyAuthority("ROLE_MANAGER", "ROLE_ADMIN")
                 .requestMatchers("/api/ai/**").hasAnyAuthority("ROLE_MANAGER", "ROLE_ADMIN")
                 .requestMatchers("/api/dashboard/**").hasAnyAuthority("ROLE_MANAGER", "ROLE_ADMIN")
